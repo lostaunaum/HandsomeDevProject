@@ -74,9 +74,9 @@
 	<section id="home"></section><!-- Home -->
 		<div id="myCarousel" class="carousel slide c-fade">
 
-<!-- This is the home section, originally it was a carousel/slider. I took that element out and took out the parallex effects of text popping because it was conflicting with the stacked images used at the home screen. Another reason why I had to get rid of those elements was due to the responsive attributes. Whenever the screen size changed one picture would occupy more space changing the position of the diagonal divider.
+<!-- Within the home section we had a slider that would consistanly swap between three pictures. I took that element out and took out the parallex effects of text popping because it was conflicting with the stacked images used. Another reason why I had to get rid of those elements was due to the responsive attributes. Whenever the screen size changed one picture would occupy more space changing the position of the diagonal divider.
 
-Each text element is contained within the contain div. Each one has its own effects. The contain div is within the scrolltextfade div which would contain each slide if we wanted to add those features. 
+Each text element is contained within the div class=contain. Each one has its own effects. The div class=contain is within the scrolltextfade div. 
 
 The text is displayed inline block and its floating to the left. -->
 			<div class="carousel-inner">
@@ -106,7 +106,7 @@ The text is displayed inline block and its floating to the left. -->
 <!-- ####################END OF SECTION################### -->
 
 
-<!-- The corner image is displayed here we give it position absolute so it will always be visible. We give it a 73.6% margin so it will always be in the same position no matter how big the screen is. -->
+<!-- The corner image is displayed here we give it position absolute so it will always be visible. We give it a 73.6% margin so it will always remain within the same position no matter how big the screen is contributing to the responsive design. -->
     <div class="cornerPicture">
     	<img src="img/CornerPicture.png" alt="1">
     </div>
@@ -119,7 +119,7 @@ The text is displayed inline block and its floating to the left. -->
 
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 no-pad" >
 
-<!-- We have the div class for the effects we have the container about-info about-info-mob. Within the container we have different divs to spearate the title information and details. We give each one different styles and stack them on top of each other, we use margins and paddings to make fit in our desired space.  -->
+<!-- We have the div class for the effects we have the container about-info about-info-mob. Within the container we have different divs to spearate the title information and details. We give each one different styles and stack them on top of each other, we use margins and paddings to make fit within our desired space.  -->
                   
 					<div class="about-info about-info-mob"> <!-- About Description -->
 						<div class="about-title">A Focused team and their approach</div>
@@ -248,12 +248,14 @@ The text is displayed inline block and its floating to the left. -->
         </div>
     </section><!-- end Portfolio -->
 	
+<!-- ####################END OF SECTION################### -->
+
 	<section id="stats" class="stats-section"><!-- Stats -->
         <div class="container">
 		
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 stats animate-in" data-anim-type="bounce-in-up-big" data-anim-delay="100">
 
-<!-- This section also has bounce in right animations since. It is only a slim section of the web page so originally I had the though of making the section transition from the right side. However in order to not break the users concentration and keep the transitions consistant I changed the effect, so its no longer bounce from the right but instead coming from below. --> 
+<!-- This section also has bounce in right animations since. It is only a slim section of the web page so originally I had the though of making the section transition from the right side. However in order to not break the users concentration and keep the transitions consistant I changed the effect, so its no longer bounces from the right but instead it comes from below. --> 
 
 							<div class="picture"><img src="img/bluetoothsymbol.png"></div>
 							<span class="title-statistics">Our Experience Design Research</span>
@@ -277,6 +279,7 @@ The text is displayed inline block and its floating to the left. -->
         </div>
     </section><!-- end Stats -->
 	
+<!-- ####################END OF SECTION################### -->
 
 <!-- The contact section, originally only had two containers and a different bounce in effect. I changed this in order to match the project description and to follow the trend of the animations as well.  -->
 
@@ -323,6 +326,7 @@ The text is displayed inline block and its floating to the left. -->
 
     </section><!-- end Contact -->
 
+<!-- ####################END OF SECTION################### -->
 
     <!-- JavaScript Files -->
     <script src="js/jquery.min-2.1.1.js"></script>
